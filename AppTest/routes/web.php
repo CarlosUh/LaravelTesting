@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/math/suma', 'MathController@suma');
+Route::get('/math/sumaUI', 'MathController@sumaUI');
+Route::resource('math', 'MathController');
